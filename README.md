@@ -10,6 +10,6 @@ git remote add origin https://github.com/Davando/CSC214-final-checkpoint
 
 pushing the project: 
 
-git add .
-git commit -m "some-message"
-git push
+1. git add .
+2. git commit -m "some-message"
+3. git push
