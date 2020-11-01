@@ -39,14 +39,23 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sH4-gT-hnY" userLabel="HappyBtn">
                                                 <rect key="frame" x="0.0" y="0.0" width="45" height="30"/>
                                                 <state key="normal" title="Happy"/>
+                                                <connections>
+                                                    <action selector="tapHappy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="une-or-OdO"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZBJ-hs-4Nk" userLabel="SadBtn">
                                                 <rect key="frame" x="95" y="0.0" width="30" height="30"/>
                                                 <state key="normal" title="Sad"/>
+                                                <connections>
+                                                    <action selector="tapSad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PKd-yn-h0K"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gDX-Hj-65k" userLabel="AngryBtn">
                                                 <rect key="frame" x="175" y="0.0" width="41" height="30"/>
                                                 <state key="normal" title="Angry"/>
+                                                <connections>
+                                                    <action selector="tapAngry:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8F0-d8-wXl"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -60,6 +69,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="angryButton" destination="gDX-Hj-65k" id="xZ4-NN-942"/>
+                        <outlet property="happyBtn" destination="sH4-gT-hnY" id="0co-yz-VGH"/>
+                        <outlet property="imageOfMood" destination="JbU-ZG-25t" id="F9C-Tg-BNe"/>
+                        <outlet property="prompt" destination="K1w-SC-F09" id="qbV-qM-QcN"/>
+                        <outlet property="sadButton" destination="ZBJ-hs-4Nk" id="9V5-iy-3JP"/>
+                        <outlet property="titleOfApp" destination="MXI-iC-6y4" id="LBw-oh-zrz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
